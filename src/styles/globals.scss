@@ -1,0 +1,80 @@
+@import "./constants.scss";
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", "Segoe UI";
+  background-color: #ffff;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+section {
+  margin-bottom: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 0;
+  @include phone {
+    padding: 0 1.75rem;
+  }
+  @include tablet {
+    padding-left: calc(56rem / 16);
+    padding-right: calc(56rem / 16);
+  }
+  @include laptop {
+    padding-left: calc(80rem / 16);
+    padding-right: calc(80rem / 16);
+  }
+  @include desktop {
+    padding-left: calc(130rem / 16);
+    padding-right: calc(130rem / 16);
+  }
+}
+
+#landing {
+  margin-right: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+// Do not allow user to select image
+.undraggable {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+// Selection
+::selection {
+  background: rgba(255, 255, 255, 0.904);
+  color: $bg-color;
+}
+
+// Custom Scrollbar
+::-webkit-scrollbar {
+  background: rgb(218, 216, 216);
+  width: 1rem;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f9f8f82d;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #7399ac;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #69818d;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #617a87;
+}
