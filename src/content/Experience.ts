@@ -9,7 +9,7 @@ interface Experience {
   tools: string[];
   desc: string[];
   bgColor: string;
-  logo: string; // Type the logo as JSX.Element
+  logo: string;
 }
 
 
