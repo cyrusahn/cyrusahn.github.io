@@ -30,13 +30,9 @@ export default function Projects() {
                 }}
                 position="left"
                 icon={
-                  logo.startsWith("/") ? (
                     <div className={styles.iconContainer}>
                       <img src={logo} alt={title} className={styles.projectLogo} />
                     </div>
-                  ) : (
-                    logo
-                  )
                 }
               >
                 <div className={styles.title}>
