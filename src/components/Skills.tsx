@@ -1,9 +1,8 @@
-import React from "react";
 import { 
   FaPython, FaJava, FaAws, FaDatabase, FaGitAlt, FaLinux, FaCode, FaFigma 
 } from "react-icons/fa";
 import { 
-  SiTypescript, SiTensorflow, SiPytorch, SiScikitlearn, SiDocker, 
+  SiTypescript, SiTensorflow, SiPytorch, SiScikitlearn, 
   SiNumpy, SiPandas, SiJirasoftware, SiConfluence, SiServerless 
 } from "react-icons/si";
 import styles from "../styles/Skills.module.scss";

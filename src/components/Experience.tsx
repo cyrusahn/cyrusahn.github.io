@@ -1,5 +1,3 @@
-import React from "react";
-import Header from "./Header";
 import { experience } from "../content/Experience";
 import {
   VerticalTimeline,
@@ -14,33 +12,42 @@ export default function Experience() {
       <h2 className={styles.title}>Experience</h2>
       <div className={styles.content}>
         <VerticalTimeline animate={true} layout="1-column">
-          {experience.map((exp) => (
-            <VerticalTimelineElement
-              key={exp.role}
-              className="vertical-timeline-element--work"
-              contentStyle={{ background: "var(--primary-accent)", borderTop: `6px solid var(--deep-blue)` }}
-              contentArrowStyle={{ borderRight: "7px solid var(--primary-accent)" }}
-              position="left"
-              icon={
-                exp.logo.startsWith("/") ? (
-                  <div className={styles.iconContainer}>
-                    <img src={exp.logo} alt={exp.company} className={styles.companyLogo} />
-                  </div>
-                ) : (
-                  exp.logo
-                )
-              }
-              date={exp.time}
-            >
-              <h2 className={styles.role}>{exp.role} @ {exp.company}</h2>
-              <p className={styles.tools}><strong>Tools:</strong> {exp.tools.join(", ")}</p>
-              <ul className={styles.desc}>
-                {exp.desc.map((point, index) => (
-                  <li key={index}>{point}</li>
-                ))}
-              </ul>
-            </VerticalTimelineElement>
-          ))}
+          {experience.map((expEntry, index) => {
+            const role = expEntry.role;
+            const company = expEntry.company;
+            const time = expEntry.time;
+            const tools = expEntry.tools;
+            const desc = expEntry.desc;
+            const logo = expEntry.logo;
+
+            return (
+              <VerticalTimelineElement
+                key={index}
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: "var(--primary-accent)", borderTop: `6px solid var(--deep-blue)` }}
+                contentArrowStyle={{ borderRight: "7px solid var(--primary-accent)" }}
+                position="left"
+                icon={
+                  logo.startsWith("/") ? (
+                    <div className={styles.iconContainer}>
+                      <img src={logo} alt={company} className={styles.companyLogo} />
+                    </div>
+                  ) : (
+                    logo
+                  )
+                }
+                date={time}
+              >
+                <h2 className={styles.role}>{role} @ {company}</h2>
+                <p className={styles.tools}><strong>Tools:</strong> {tools.join(", ")}</p>
+                <ul className={styles.desc}>
+                  {desc.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
+                </ul>
+              </VerticalTimelineElement>
+            );
+          })}
         </VerticalTimeline>
       </div>
     </section>

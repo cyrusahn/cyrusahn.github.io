@@ -1,5 +1,3 @@
-import React from "react";
-import Header from "./Header";
 import LinkedIn from "../public/linkedin.png";
 import Email from "../public/email.png";
 import Github from "../public/github.png";
