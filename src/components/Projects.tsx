@@ -5,6 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import styles from "../styles/Projects.module.scss";
+import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, Key } from "react";
 
 export default function Projects() {
   return (
@@ -12,7 +13,7 @@ export default function Projects() {
       <h2 className={styles.title}>Projects</h2>
       <div className={styles.content}>
         <VerticalTimeline animate={true} layout="1-column">
-          {projects.map((project, index) => {
+          {projects.map((project: { title: any; subtitle: any; tools: any; desc: any; color: any; logo: any; }, index: Key | null | undefined) => {
             const title = project.title;
             const subtitle = project.subtitle;
             const tools = project.tools;
@@ -52,7 +53,7 @@ export default function Projects() {
                 )}
                 <div className={styles.desc}>
                   <ul>
-                    {desc.map((point, index) => (
+                    {desc.map((point: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined, index: Key | null | undefined) => (
                       <li key={index}>{point}</li>
                     ))}
                   </ul>

@@ -5,6 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import styles from "../styles/Experience.module.scss";
+import { JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal } from "react";
 
 export default function Experience() {
   return (
@@ -12,7 +13,7 @@ export default function Experience() {
       <h2 className={styles.title}>Experience</h2>
       <div className={styles.content}>
         <VerticalTimeline animate={true} layout="1-column">
-          {experience.map((expEntry, index) => {
+          {experience.map((expEntry: { role: any; company: any; time: any; tools: any; desc: any; logo: any; }, index: Key | null | undefined) => {
             const role = expEntry.role;
             const company = expEntry.company;
             const time = expEntry.time;
@@ -41,7 +42,7 @@ export default function Experience() {
                 <h2 className={styles.role}>{role} @ {company}</h2>
                 <p className={styles.tools}><strong>Tools:</strong> {tools.join(", ")}</p>
                 <ul className={styles.desc}>
-                  {desc.map((point, index) => (
+                  {desc.map((point: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined, index: Key | null | undefined) => (
                     <li key={index}>{point}</li>
                   ))}
                 </ul>
