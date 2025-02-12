@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Typist from "react-typist";
 import styles from "../styles/AboutMe.module.scss";
 
