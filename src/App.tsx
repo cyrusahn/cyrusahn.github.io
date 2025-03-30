@@ -11,10 +11,10 @@ const App: React.FC = () => {
   return (
     <div className="container mx-auto px-4">
       <AboutMe />
+      <Certifications />
       <Skills />
       <Experience />
       <Projects />
-      <Certifications />
       <Contact />
       <Footer />
     </div>
