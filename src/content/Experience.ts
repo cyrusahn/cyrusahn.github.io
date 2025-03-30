@@ -1,5 +1,4 @@
 import phsaLogo from "../public/phsa.png"
-import peroptyxLogo from "../public/peroptyx.png"
 import evidencebancLogo from "../public/evidencebanc.png"
 
 interface Experience {
@@ -15,18 +14,6 @@ interface Experience {
 
 // Define the experience array with typed logos
 export const experience: Experience[] = [
-  {
-    role: "Data Analyst",
-    company: "Peroptyx",
-    time: "July 2024 – Present",
-    tools: ["Python", "Excel", "GenAI", "LLM", "Machine Learning"],
-    desc: [
-      "Leveraged analytical expertise to evaluate the quality and relevance of data outputs, optimizing large language model (LLM) performance through fine-tuning.",
-      "Utilized advanced prompt engineering and rigorous validation techniques to refine input data, ensuring it aligns with user and client requirements while enhancing overall model output quality."
-    ],
-    bgColor: "#50659F",
-    logo: peroptyxLogo,
-  },
   {
     role: "Software Developer Intern",
     company: "EvidenceBanc",

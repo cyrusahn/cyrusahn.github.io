@@ -1,6 +1,7 @@
 import AWSLogo from "../public/AWS.png"
 import scipyLogo from "../public/scipy.png"
 import androidLogo from "../public/android.png"
+import peroptyxLogo from "../public/peroptyx.png"
 
 interface Project {
   title: string;
@@ -13,6 +14,17 @@ interface Project {
 
 
 export const projects: Project[] = [
+  {
+    title: "Peroptyx Data Analyst",
+    subtitle: "Machine Learning Community Project",
+    tools: ["Python", "Excel", "GenAI", "LLM", "Machine Learning"],
+    desc: [
+      "Evaluated the quality and relevance of data outputs, optimizing large language model performance through fine-tuning and rigorous validation techniques.",
+      "Improved model accuracy and efficiency by up to 90% by analyzing data patterns and implementing strategic data preprocessing techniques."
+    ],
+    color: "#50659F",
+    logo: peroptyxLogo,
+  },
   {
     title: "StudentBubble",
     subtitle: "Serverless Q&A Web App",
