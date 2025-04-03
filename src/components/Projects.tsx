@@ -35,15 +35,13 @@ export default function Projects() {
                     </div>
                 }
               >
-                <div className={styles.title}>
-                  <h2 className="vertical-timeline-element-title">
-                    <span style={{ display: "flex", alignItems: "center" }}>
-                      {title}: {subtitle}
+                <div className={styles.projecttitle}>
+                    <span>
+                      {title}:&nbsp;<span className={styles.subtitle}> {subtitle}</span>
                     </span>
-                  </h2>
                 </div>
                 {tools.length > 0 && (
-                  <p className="vertical-timeline-element-subtitle">
+                  <p className={styles.tools}>
                     <strong>Tools:</strong> {tools.join(", ")}
                   </p>
                 )}

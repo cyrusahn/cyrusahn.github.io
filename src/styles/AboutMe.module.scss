@@ -6,15 +6,15 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: $background-color;
-  color: $deep-blue;
+  background: $secondary-colour;
+  color: $primary-colour;
   text-align: center;
   padding: 20px;
 
   .hello {
     font-size: 4rem;
     font-weight: bold;
-    color: $deep-blue;
+    color: $primary-colour;
     display: flex;
     align-items: center;
     gap: 20px; /* Space between text and logo */
@@ -25,7 +25,7 @@
     animation: bounce 1s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
   }
   .name {
-    color: $deep-blue;
+    color: $primary-colour;
   }
   @keyframes bounce {
     0%, 100% {
@@ -40,14 +40,13 @@
     font-size: 1.6rem;
     margin-top: -40px;
     margin-bottom: 150px;
-    font-style: italic;
     opacity: 0.9;
     height: 2rem;
   }
 
   .typingText {
     display: inline;
-    color: $muted-gray;
+    color: $dark-text;
   }
 
   .buttons {
@@ -57,8 +56,8 @@
   }
 
   .button {
-    background: $primary-accent;
-    color: $deep-blue;
+    background: $primary-colour;
+    color: #ffffff;
     font-weight: bold;
     padding: 14px 24px;
     border-radius: 8px;
@@ -68,8 +67,8 @@
   }
 
   .button:hover {
-    background: $deep-blue;
-    color: $background-color;
+    background: $primary-colour;
+    color: $secondary-colour;
     transform: scale(1.1);
   }
   @keyframes swayTrees {

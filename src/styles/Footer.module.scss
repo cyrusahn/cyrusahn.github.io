@@ -1,15 +1,14 @@
 @import "./constants.scss";
 
 .container {
-  background: $primary-accent;
+  background: $primary-colour;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 1rem 0;
   line-height: 0.5;
-  text-decoration: none;
-  color: black;
+  color: $secondary-colour;
 }
 
 .last_updated {

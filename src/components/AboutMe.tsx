@@ -7,11 +7,11 @@ const TextLoop = () => {
   const messages = [
     "I am a software developer.",
     "I love exploring new technologies.",
-    "I play volleyball.",
+    "I like to play sports.",
     "I enjoy spending time in nature.",
   ];
 
-  const colors = ["#B9C8E5", "#B9C8E5", "#B9C8E5", "#B9C8E5"];
+  const colors = ["#000000", "#000000", "#000000", "#000000"];
   const [message, setMessage] = useState(messages[0]);
   const [color, setColor] = useState(colors[0]);
   const [typing, setTyping] = useState(true);

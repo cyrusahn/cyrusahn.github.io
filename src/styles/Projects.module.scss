@@ -1,7 +1,7 @@
 @import "../styles/constants.scss";
 
 .projects {
-  background: $background-color;
+  background: $secondary-colour;
   color: $dark-text;
   padding: 50px 0;
   text-align: center;
@@ -9,7 +9,7 @@
   .title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: $deep-blue;
+    color: $primary-colour;
     margin-bottom: 30px;
   }
 
@@ -20,13 +20,14 @@
   .role {
     font-size: 1.5rem;
     font-weight: bold;
-    color: $deep-blue;
+    color: $primary-colour;
   }
 
   .tools {
     font-size: 1.1rem;
-    color: $muted-gray;
-    margin-top: 5px;
+    color: $dark-text;
+    margin-bottom: 5px;
+    text-align: left;
   }
 
   .desc {
@@ -41,7 +42,20 @@
       list-style-type: disc; /* Adds bullet points */
     }
   }
+  .projecttitle {
+    font-weight: bold;
+    color: $primary-colour;
+    font-size: 1.5rem;
+    span {
+      display: flex;
+      align-items: center;
+    }
   
+    .subtitle {
+      color: $dark-text;
+    }
+  }
+
   /* Style the timeline elements */
   .vertical-timeline-element-content {
     border-radius: 10px;
@@ -58,12 +72,12 @@
     height: 64px;
     border-radius: 50%; /* Makes it circular for a clean look */
     object-fit: contain; /* Ensures proper scaling inside the logo area */
-    background-color: #fff; /* Adds a subtle background for contrast */
+    background-color: $secondary-colour; /* Adds a subtle background for contrast */
     padding: 5px; /* Provides some spacing around the logo */
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid $deep-blue; /* Matches color scheme */
+    border: 2px solid $primary-colour; /* Matches color scheme */
     margin-left: -11px;
   }
 }
