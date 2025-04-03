@@ -7,7 +7,7 @@ export default function Footer() {
         <a href="#about_me" className={styles.container}>
             <span>↑ Back to top</span>
         </a>
-            <span className={styles.last_updated}>Last Updated: March 2025</span>
+            <span className={styles.last_updated}>Last Updated: April 2025</span>
       </footer>
     );
   }

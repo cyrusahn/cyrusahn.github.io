@@ -53,9 +53,9 @@ export const projects: Project[] = [
     subtitle: "Mobile Application Game",
     tools: ["Java", "Android Studio", "Git", "Scrum"],
     desc: [
-      "Developed and created a new app based on the board game Spot it, using Java in Android Studio to give users a digital and customizable experience of the game",
-      "Collaborated with three other classmates using Scrum agile process and Gitlab to efficiently divide tasks and complete each requirement before the deadline",
-      "Designed and implemented an options menu using object-oriented programming that allows for the user to completely customize difficulty and images"
+      "Developed and created a new app based on the board game Spot it, using Java in Android Studio to give users a digital and customizable experience of the game.",
+      "Collaborated with three other classmates using Scrum agile process and Gitlab to efficiently divide tasks and complete each requirement before the deadline.",
+      "Designed and implemented an options menu using object-oriented programming that allows for the user to completely customize difficulty and images."
     ],
     color: "#50659F",
     logo: androidLogo

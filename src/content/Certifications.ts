@@ -1,4 +1,5 @@
 import cloudpractitionerLogo from "../public/cloudpractitioner.png"
+import solutionsarctitectLogo from "../public/solutionsarchitect.png"
 
 export interface Certification {
     title: string;
@@ -15,5 +16,11 @@ export interface Certification {
       link: "https://www.credly.com/badges/306d50bd-7cc9-4255-bdb0-d88136c66dee/public_url"
     },
     // Add more certificates here in the same format
+    {
+      title: "AWS Certified Solutions Architect - Associate",
+      issuer: "Amazon Web Services (AWS)",
+      image: solutionsarctitectLogo,
+      link: ""
+    },
   ];
   

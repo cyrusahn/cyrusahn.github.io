@@ -16,14 +16,18 @@ export default function Certifications() {
             <div className={styles.certDetails}>
               <h3>{cert.title}</h3>
               <p>Issued by {cert.issuer}</p>
-              <a
-                href={cert.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.certLink}
-              >
-                View Certificate
-              </a>
+              {cert.link ? (
+                <a
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.certLink}
+                >
+                  View Certificate
+                </a>
+              ) : (
+                <span className={styles.noCert}>In progress</span>
+              )}
             </div>
           </div>
         ))}
