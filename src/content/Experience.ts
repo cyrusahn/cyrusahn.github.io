@@ -20,7 +20,7 @@ export const experience: Experience[] = [
     time: "Sept. 2023 – Apr. 2024",
     tools: ["PHP", "AWS", "Figma"],
     desc: [
-      "Led a team of 5 in crafting a user-centered interface, improving usability and accessibility by 80% through comprehensive user research and iterative usability testing.",
+      "Developed the front end of a dashcam marketplace website using React to showcase video clips, video requests, and facilitate transactions.",
       "Functioned as a technical consultant for stakeholders, effectively addressing and resolving 100% of issues and concerns throughout the project development lifecycle.",
       "Employed industry-standard tools such as Figma to design high-fidelity prototypes and mock-ups, ensuring adherence to UI/UX design principles."
     ],

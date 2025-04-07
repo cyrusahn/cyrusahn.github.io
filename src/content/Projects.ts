@@ -30,12 +30,24 @@ export const projects: Project[] = [
     subtitle: "Serverless Q&A Web App",
     tools: ["Python", "AWS", "HTML", "CSS"],
     desc: [
-      "Led a team of 4 in creating a serverless web application utilizing a microservices architecture to host a question-and-answer forum tailored for students.",
-      "Engineered back-end services with AWS Lambda, API Gateway, and DynamoDB, ensuring high availability, consistency, and low-latency performance.",
-      "Developed intuitive front-end interfaces with HTML and CSS, enabling seamless client interactions with dynamic back-end components while prioritizing secure access controls."
+      "Designed and implemented a fully serverless backend using AWS Lambda, API Gateway, and DynamoDB, enabling scalable and cost-effective Q&A services for students.",
+      "Developed RESTful APIs to handle user content, queries, and data storage with high availability and fault tolerance.",
+      "Architected microservices to decouple functionalities and enhance maintainability, supporting seamless updates and efficient scaling."
     ],
     color: "#50659F",
     logo: AWSLogo,
+  },
+  {
+    title: "Find The Match App",
+    subtitle: "Mobile Application Game",
+    tools: ["Java", "Android Studio", "Git", "Scrum"],
+    desc: [
+      "Developed an interactive Android matching game in Java, applying object-oriented principles to create modular and reusable components.",
+      "Implemented the Model-View-Controller (MVC) design pattern to separate game logic, UI, and data handling, improving maintainability and scalability.",
+      "Collaborated with three other classmates using Scrum agile process and Gitlab to efficiently divide tasks and complete each requirement before the deadline."
+    ],
+    color: "#50659F",
+    logo: androidLogo
   },
   {
     title: "Sensors, Noise, and Walking",
@@ -47,17 +59,5 @@ export const projects: Project[] = [
     ],
     color: "#50659F",
     logo: scipyLogo,
-  },
-  {
-    title: "Find The Match App",
-    subtitle: "Mobile Application Game",
-    tools: ["Java", "Android Studio", "Git", "Scrum"],
-    desc: [
-      "Developed and created a new app based on the board game Spot it, using Java in Android Studio to give users a digital and customizable experience of the game.",
-      "Collaborated with three other classmates using Scrum agile process and Gitlab to efficiently divide tasks and complete each requirement before the deadline.",
-      "Designed and implemented an options menu using object-oriented programming that allows for the user to completely customize difficulty and images."
-    ],
-    color: "#50659F",
-    logo: androidLogo
   }
 ];
