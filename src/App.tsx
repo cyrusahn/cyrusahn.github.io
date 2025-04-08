@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar";
 
 const App: React.FC = () => {
   return (
-    <div style={{ width: '100%', margin: 0, padding: 0 }}>
+    <div className="container mx-auto px-4">
       <Navbar />
       <AboutMe />
       <Certifications />
