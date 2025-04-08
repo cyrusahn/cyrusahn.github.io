@@ -6,15 +6,16 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: $secondary-colour;
   color: $primary-colour;
   text-align: center;
   padding: 20px;
 
+  background: linear-gradient(to bottom, #dff0fd 0%, #f9fbfd 50%, #ffffff 100%);
+
   .hello {
     font-size: 4rem;
     font-weight: bold;
-    color: $primary-colour;
+    color: $dark-text;
     display: flex;
     align-items: center;
     gap: 20px; /* Space between text and logo */

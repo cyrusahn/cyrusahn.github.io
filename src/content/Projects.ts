@@ -28,7 +28,7 @@ export const projects: Project[] = [
   {
     title: "StudentBubble",
     subtitle: "Serverless Q&A Web App",
-    tools: ["Python", "AWS", "HTML", "CSS"],
+    tools: ["Python", "AWS Lambda", "DynamoDB", "Amplify", "CloudWatch", "S3", "HTML", "CSS", "Restful API"],
     desc: [
       "Designed and implemented a fully serverless backend using AWS Lambda, API Gateway, and DynamoDB, enabling scalable and cost-effective Q&A services for students.",
       "Developed RESTful APIs to handle user content, queries, and data storage with high availability and fault tolerance.",
@@ -40,7 +40,7 @@ export const projects: Project[] = [
   {
     title: "Find The Match App",
     subtitle: "Mobile Application Game",
-    tools: ["Java", "Android Studio", "Git", "Scrum"],
+    tools: ["Java", "Android Studio", "OOP", "XML", "MVC Pattern", "Agile"],
     desc: [
       "Developed an interactive Android matching game in Java, applying object-oriented principles to create modular and reusable components.",
       "Implemented the Model-View-Controller (MVC) design pattern to separate game logic, UI, and data handling, improving maintainability and scalability.",

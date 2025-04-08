@@ -1,0 +1,48 @@
+@import "./constants.scss";
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: $secondary-colour;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  // Prevent scroll bar from triggering due to layout
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: $dark-text;
+  white-space: nowrap;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+
+  li {
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      color: $dark-text;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: lighten($primary-colour, 20%);
+      }
+    }
+  }
+}

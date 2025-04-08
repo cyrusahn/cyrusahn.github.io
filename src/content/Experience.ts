@@ -15,10 +15,10 @@ interface Experience {
 // Define the experience array with typed logos
 export const experience: Experience[] = [
   {
-    role: "Software Developer Intern",
+    role: "Software Engineer Intern",
     company: "EvidenceBanc",
     time: "Sept. 2023 – Apr. 2024",
-    tools: ["PHP", "AWS", "Figma"],
+    tools: ["React", "AWS", "Figma", "Agile"],
     desc: [
       "Developed the front end of a dashcam marketplace website using React to showcase video clips, video requests, and facilitate transactions.",
       "Functioned as a technical consultant for stakeholders, effectively addressing and resolving 100% of issues and concerns throughout the project development lifecycle.",
@@ -28,7 +28,7 @@ export const experience: Experience[] = [
     logo: evidencebancLogo,
   },
   {
-    role: "Client Systems Technician Co-op",
+    role: "Systems Administrator",
     company: "PHSA - BC Cancer",
     time: "May 2022 – Dec. 2022",
     tools: ["RHEL (CentOS)", "Windows", "Bash", "Jira", "BitBucket", "Active Directory", "LDAP", "VMware", "Puppet"],
